@@ -14,9 +14,10 @@ export const getRollupConfig = ({
 }) => {
   const SOURCE_DIR = path.resolve(pwd, 'src')
   const DIST_DIR = path.resolve(pwd, 'dist')
-  const input = `${SOURCE_DIR}/index.js`
+  const input = `${SOURCE_DIR}/index.ts`
   const external = id => !id.startsWith('.') && !id.startsWith('/')
   const getBabelOptions = ({ useESModules }) => ({
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
     exclude: '**/node_modules/**',
     runtimeHelpers: true,
     configFile: path.join(pwd, '../../babel.config.js'),
