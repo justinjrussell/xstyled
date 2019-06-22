@@ -38,6 +38,7 @@
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
     "@testing-library/react": "^8.0.1",
+    "@types/jest": "^24.0.15",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
@@ -70,6 +71,8 @@
     "rollup-plugin-size-snapshot": "^0.9.0",
     "rollup-plugin-terser": "^5.0.0",
     "shx": "^0.3.2",
-    "styled-components": "^4.3.1"
+    "styled-components": "^4.3.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.2"
   }
 }
